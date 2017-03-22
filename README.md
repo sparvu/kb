@@ -31,6 +31,6 @@ The LMO can map and describe data from different industries, currently handling 
  * Environmental Monitoring
  * Finance
  * Healthcare
- * Information Technology (IT)
+ * Information Communications & Technology (ICT)
  * Meteorology
 
