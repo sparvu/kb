@@ -477,7 +477,7 @@
         "synop": {
           "id": "aws-synop",
           "rawdata": "aws.synop.krd",
-          "stall": 1200,
+          "stall": 7200,
           "format": {
             "fields_separator": ",",
             "fields": [
@@ -1722,9 +1722,60 @@
             },
             {
                 "name": "ww",
-                "functions": {
-                    "LAST": [ [86400, 600], [604800, 3600], [2592000, 10800] ]
-                }
+                "type": "status",
+                "intervals": [ [86400, 600], [604800, 3600], [2592000, 10800] ],
+                "values": {
+                    "code_00": [ "0" ],
+                    "code_04": [ "4" ],
+                    "code_05": [ "5" ],
+                    "code_10": [ "10" ],
+                    "code_20": [ "20" ],
+                    "code_21": [ "21" ],
+                    "code_22": [ "22" ],
+                    "code_23": [ "23" ],
+                    "code_24": [ "24" ],
+                    "code_25": [ "25" ],
+                    "code_30": [ "30" ],
+                    "code_31": [ "31" ],
+                    "code_32": [ "32" ],
+                    "code_33": [ "33" ],
+                    "code_34": [ "34" ],
+                    "code_40": [ "40" ],
+                    "code_41": [ "41" ],
+                    "code_42": [ "42" ],
+                    "code_50": [ "50" ],
+                    "code_51": [ "51" ],
+                    "code_52": [ "52" ],
+                    "code_53": [ "53" ],
+                    "code_54": [ "54" ],
+                    "code_55": [ "55" ],
+                    "code_56": [ "56" ],
+                    "code_60": [ "60" ],
+                    "code_61": [ "61" ],
+                    "code_62": [ "62" ],
+                    "code_63": [ "63" ],
+                    "code_64": [ "64" ],
+                    "code_65": [ "65" ],
+                    "code_66": [ "66" ],
+                    "code_67": [ "67" ],
+                    "code_68": [ "68" ],
+                    "code_70": [ "70" ],
+                    "code_71": [ "71" ],
+                    "code_72": [ "72" ],
+                    "code_73": [ "73" ],
+                    "code_74": [ "74" ],
+                    "code_75": [ "75" ],
+                    "code_76": [ "76" ],
+                    "code_80": [ "80" ],
+                    "code_81": [ "81" ],
+                    "code_82": [ "82" ],
+                    "code_83": [ "83" ],
+                    "code_84": [ "84" ],
+                    "code_85": [ "85" ],
+                    "code_86": [ "86" ],
+                    "code_87": [ "87" ]
+                },
+                "message_interval": 600
             },
             {
                 "name": "zap1",
@@ -1755,7 +1806,7 @@
         "synop": {
           "id": "awspz-synop",
           "rawdata": "awspz.synop.krd",
-          "stall": 1200,
+          "stall": 7200,
           "format": {
             "fields_separator": ",",
             "fields": [
@@ -3052,9 +3103,60 @@
             },
             {
                 "name": "ww",
-                "functions": {
-                    "LAST": [ [86400, 600], [604800, 3600], [2592000, 10800] ]
-                }
+                "type": "status",
+                "intervals": [ [86400, 600], [604800, 3600], [2592000, 10800] ],
+                "values": {
+                    "code_00": [ "0" ],
+                    "code_04": [ "4" ],
+                    "code_05": [ "5" ],
+                    "code_10": [ "10" ],
+                    "code_20": [ "20" ],
+                    "code_21": [ "21" ],
+                    "code_22": [ "22" ],
+                    "code_23": [ "23" ],
+                    "code_24": [ "24" ],
+                    "code_25": [ "25" ],
+                    "code_30": [ "30" ],
+                    "code_31": [ "31" ],
+                    "code_32": [ "32" ],
+                    "code_33": [ "33" ],
+                    "code_34": [ "34" ],
+                    "code_40": [ "40" ],
+                    "code_41": [ "41" ],
+                    "code_42": [ "42" ],
+                    "code_50": [ "50" ],
+                    "code_51": [ "51" ],
+                    "code_52": [ "52" ],
+                    "code_53": [ "53" ],
+                    "code_54": [ "54" ],
+                    "code_55": [ "55" ],
+                    "code_56": [ "56" ],
+                    "code_60": [ "60" ],
+                    "code_61": [ "61" ],
+                    "code_62": [ "62" ],
+                    "code_63": [ "63" ],
+                    "code_64": [ "64" ],
+                    "code_65": [ "65" ],
+                    "code_66": [ "66" ],
+                    "code_67": [ "67" ],
+                    "code_68": [ "68" ],
+                    "code_70": [ "70" ],
+                    "code_71": [ "71" ],
+                    "code_72": [ "72" ],
+                    "code_73": [ "73" ],
+                    "code_74": [ "74" ],
+                    "code_75": [ "75" ],
+                    "code_76": [ "76" ],
+                    "code_80": [ "80" ],
+                    "code_81": [ "81" ],
+                    "code_82": [ "82" ],
+                    "code_83": [ "83" ],
+                    "code_84": [ "84" ],
+                    "code_85": [ "85" ],
+                    "code_86": [ "86" ],
+                    "code_87": [ "87" ]
+                },
+                "message_interval": 600
             },
             {
                 "name": "ext_dc",
@@ -3067,7 +3169,7 @@
         "synop": {
           "id": "awsp-synop",
           "rawdata": "awsp.synop.krd",
-          "stall": 1200,
+          "stall": 7200,
           "format": {
             "fields_separator": ",",
             "fields": [
@@ -4356,7 +4458,7 @@
         "synop": {
           "id": "awss-synop",
           "rawdata": "awss.synop.krd",
-          "stall": 1200,
+          "stall": 7200,
           "format": {
             "fields_separator": ",",
             "fields": [
@@ -5619,7 +5721,7 @@
         "synop": {
           "id": "awsm-synop",
           "rawdata": "awsm.synop.krd",
-          "stall": 1200,
+          "stall": 7200,
           "format": {
             "fields_separator": ",",
             "fields": [
@@ -6892,7 +6994,7 @@
         "synop": {
           "id": "awssms-synop",
           "rawdata": "awssms.synop.krd",
-          "stall": 1200,
+          "stall": 7200,
           "format": {
             "fields_separator": ",",
             "fields": [

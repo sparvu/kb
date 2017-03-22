@@ -1,0 +1,316 @@
+{
+  "name": "End User Performance",
+  "description": "End User Performance Monitoring Objects",
+  "id": "epd",
+  "ds_stall": 600,
+  "ds": {
+    "website": {
+      "messages": {
+        "epd-ttfb": {
+          "id": "epd-ttfb",
+          "rawdata": "perf.krd",
+          "stall": 300,
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "request",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "ttime",
+                "type": "numeric"
+              },
+              {
+                "name": "ctime",
+                "type": "numeric"
+              },
+              {
+                "name": "dnstime",
+                "type": "numeric"
+              },
+              {
+                "name": "ptime",
+                "type": "numeric"
+              },
+              {
+                "name": "pktime",
+                "type": "numeric"
+              },
+              {
+                "name": "size",
+                "type": "numeric"
+              },
+              {
+                "name": "status",
+                "type": "status"
+              },
+              {
+                "name": "hash",
+                "type": "hash",
+                "function": "sha256"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ttime",
+                "functions": {
+                    "MIN": [ [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ],
+                    "MAX": [ [ 300, 300 ], [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ],
+                    "COUNT": [ [ 300, 300 ], [ 1800, 1800 ], [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ],
+                    "SUM": [ [ 300, 300 ], [ 1800, 1800 ], [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ], 
+                    "LAST": [ [ 300, 300 ], [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ]
+                }
+            },
+            {
+                "name": "status",
+                "type": "status",
+                "intervals": [ [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ],
+                "values": {
+                    "success": [ "200", "201", "202", "203", "204", "205", "206", "207", "208", "226", "300", "301", "302", "303", "304", "305", "306", "307", "308" ],
+                    "code400": [ "400" ],
+                    "code401": [ "401" ],
+                    "code403": [ "403" ],
+                    "code404": [ "404" ],
+                    "code405": [ "405" ],
+                    "code406": [ "406" ],
+                    "code408": [ "408" ],
+                    "code410": [ "410" ],
+                    "code429": [ "429" ],
+                    "code419": [ "419" ],
+                    "code415": [ "415" ],
+                    "code500": [ "500" ],
+                    "code501": [ "501" ],
+                    "code502": [ "502" ],
+                    "code503": [ "503" ],
+                    "code504": [ "504" ],
+                    "code505": [ "505" ],
+                    "no_response": [ "0" ]
+                },
+                "message_interval": 60
+            }
+          ]
+        },
+        "epd-inv": {
+          "id": "epd-inv",
+          "rawdata": "inventory.krd",
+          "stall": 7200,
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "sitename",
+                "type": "metadata",
+                "role": "ds_name_log"
+              },
+              {
+                "name": "siteid",
+                "type": "inventory"
+              },
+              {
+                "name": "zone",
+                "type": "metadata",
+                "role": "icao"
+              },
+              {
+                "name": "protocol",
+                "type": "inventory"
+              },
+              {
+                "name": "hash",
+                "type": "hash",
+                "function": "sha256"
+              }
+            ]
+          },
+          "statistics": []
+        }
+      }
+    },
+    "certificate": {
+      "messages": {
+        "epd-cert": {
+          "id": "epd-cert",
+          "rawdata": "certrec.krd",
+          "stall": 86400,
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "sitename",
+                "type": "metadata",
+                "role": "ds_name_log"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "certificate",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "expiration",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "days",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "status",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "hash",
+                "type": "hash",
+                "function": "sha256"
+              }
+            ]
+          },
+          "statistics": []
+        }
+      }
+    },
+    "service": {
+      "messages": {
+        "epd-svc": {
+          "id": "epd-svc",
+          "rawdata": "svcrec.krd",
+          "stall": 300,
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "sitename",
+                "type": "metadata",
+                "role": "ds_name_log"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "service",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "return_time",
+                "type": "numeric"
+              },
+              {
+                "name": "siteid",
+                "type": "inventory"
+              },
+              {
+                "name": "zone",
+                "type": "metadata",
+                "role": "icao"
+              },
+              {
+                "name": "protocol",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "status",
+                "type": "status"
+              },
+              {
+                "name": "hash",
+                "type": "hash",
+                "function": "sha256"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "return_time",
+                "functions": {
+                    "MIN": [ [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ],
+                    "MAX": [ [ 300, 300 ], [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ],
+                    "COUNT": [ [ 300, 300 ], [ 1800, 1800 ], [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ],
+                    "SUM": [ [ 300, 300 ], [ 1800, 1800 ], [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ], 
+                    "LAST": [ [ 300, 300 ], [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ]
+                }
+            },
+            {
+                "name": "status",
+                "type": "status",
+                "intervals": [ [ 10800, 60 ], [ 21600, 300 ], [ 43200, 900 ], [ 86400, 1800 ], [ 259200, 3600 ], [ 604800, 10800 ], [ 2592000, 43200 ], [ 7776000, 86400 ] ],
+                "values": {
+                    "success": [ "1" ],
+                    "failed": [ "0" ]
+                },
+                "message_interval": 60
+            }
+          ]
+        }  
+      }
+    }
+  }
+}
