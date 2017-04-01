@@ -24,7 +24,7 @@ We plan offering the library as JSON files, by default. Additional formats will 
 ## Industries
 The LMO can map and describe data from different industries, currently handling IT, Meteorology and Climatology.
 
-![](https://raw.github.com/kronometrix/lmo/master/img/lmo.png)
+![](https://raw.github.com/sparvu/lmo/master/img/lmo.png)
 
  * Business Analytics (BA)
  * Climatology
