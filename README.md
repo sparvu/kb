@@ -25,7 +25,7 @@ We plan offering the library as JSON files, by default. Additional formats will 
 The LMO can map and describe data from different industries, currently handling ICT, 
 Meteorology and Environmental Monitoring.
 
-![](https://raw.github.com/sparvu/lmo/master/img/lmo.png)
+![](https://raw.github.com/sparvu/lmo/master/img/lmo-light.png)
 
  * Business Intelligence (BI)
  * Climatology
