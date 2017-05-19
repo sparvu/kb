@@ -2,7 +2,6 @@
   "name": "Web Performance",
   "description": "Web Performance Monitoring Objects",
   "id": "wpd",
-  "device_stall": 300,
   "ds": {
     "famp": {
       "messages": {

@@ -2,7 +2,6 @@
   "name": "End User Performance",
   "description": "End User Performance Monitoring Objects",
   "id": "epd",
-  "ds_stall": 600,
   "ds": {
     "website": {
       "messages": {
