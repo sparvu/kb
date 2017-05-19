@@ -9,6 +9,7 @@
           "id": "wpd-freebsd-ttfb",
           "rawdata": "webrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -166,6 +167,7 @@
           "id": "wpd-freebsd-sysrec",
           "rawdata": "sysrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -598,6 +600,7 @@
           "id": "wpd-freebsd-cpurec",
           "rawdata": "cpurec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -719,6 +722,7 @@
           "id": "wpd-freebsd-diskrec",
           "rawdata": "diskrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -885,6 +889,7 @@
           "id": "wpd-freebsd-nicrec",
           "rawdata": "nicrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -1026,6 +1031,7 @@
           "id": "wpd-freebsd-hdwrec",
           "rawdata": "hdwrec.krd",
           "stall": 3600,
+          "sli": "no",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -1135,6 +1141,7 @@
           "id": "wpd-freebsd-a2stat",
           "rawdata": "a2statrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -1319,6 +1326,7 @@
           "id": "wpd-freebsd-a2inv",
           "rawdata": "a2invrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -1385,6 +1393,7 @@
           "id": "wpd-freebsd-a2bus",
           "rawdata": "a2busrec.krd",
           "stall": 60,
+          "sli": "no",
           "type": "bulk",
           "content-type" : "text/plain",
           "content-storage" : "overwrite",
@@ -1394,6 +1403,7 @@
           "id": "wpd-freebsd-ngxstat",
           "rawdata": "ngxstatrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -1573,6 +1583,7 @@
           "id": "wpd-freebsd-ngxinv",
           "rawdata": "ngxinvrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -1643,6 +1654,7 @@
           "id": "wpd-linux-ttfb",
           "rawdata": "webrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -1800,6 +1812,7 @@
           "id": "wpd-linux-sysrec",
           "rawdata": "sysrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -2268,6 +2281,7 @@
           "id": "wpd-linux-cpurec",
           "rawdata": "cpurec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -2431,6 +2445,7 @@
           "id": "wpd-linux-diskrec",
           "rawdata": "diskrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -2565,6 +2580,7 @@
           "id": "wpd-linux-nicrec",
           "rawdata": "nicrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -2734,6 +2750,7 @@
           "id": "wpd-linux-hdwrec",
           "rawdata": "hdwrec.krd",
           "stall": 3600,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -2843,6 +2860,7 @@
           "id": "wpd-linux-a2stat",
           "rawdata": "a2statrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -3027,6 +3045,7 @@
           "id": "wpd-linux-a2inv",
           "rawdata": "a2invrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -3093,6 +3112,7 @@
           "id": "wpd-linux-a2bus",
           "rawdata": "a2busrec.krd",
           "stall": 60,
+          "sli": "no",
           "type": "bulk",
           "content-type" : "text/plain",
           "content-storage" : "overwrite",
@@ -3102,6 +3122,7 @@
           "id": "wpd-linux-ngxstat",
           "rawdata": "ngxstatrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -3281,6 +3302,7 @@
           "id": "wpd-linux-ngxinv",
           "rawdata": "ngxinvrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -3351,6 +3373,7 @@
           "id": "wpd-win-ttfb",
           "rawdata": "webrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -3508,6 +3531,7 @@
           "id": "wpd-win-sysrec",
           "rawdata": "sysrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -3893,6 +3917,7 @@
           "id": "wpd-win-cpurec",
           "rawdata": "cpurec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -4014,6 +4039,7 @@
           "id": "wpd-win-diskrec",
           "rawdata": "diskrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -4188,6 +4214,7 @@
           "id": "wpd-win-nicrec",
           "rawdata": "nicrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -4333,6 +4360,7 @@
           "id": "wpd-win-hdwrec",
           "rawdata": "hdwrec.krd",
           "stall": 3600,
+          "sli": "no",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -4442,6 +4470,7 @@
           "id": "wpd-win-a2stat",
           "rawdata": "a2statrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -4626,6 +4655,7 @@
           "id": "wpd-win-a2inv",
           "rawdata": "a2invrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -4692,6 +4722,7 @@
           "id": "wpd-win-a2bus",
           "rawdata": "a2busrec.krd",
           "stall": 60,
+          "sli": "no",
           "type": "bulk",
           "content-type" : "text/plain",
           "content-storage" : "overwrite",

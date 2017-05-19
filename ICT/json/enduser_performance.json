@@ -9,6 +9,7 @@
           "id": "epd-ttfb",
           "rawdata": "perf.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -110,7 +111,8 @@
         "epd-inv": {
           "id": "epd-inv",
           "rawdata": "inventory.krd",
-          "stall": 7200,
+          "stall": 3600,
+          "sli": "no",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -168,7 +170,8 @@
         "epd-cert": {
           "id": "epd-cert",
           "rawdata": "certrec.krd",
-          "stall": 86400,
+          "stall": 3600,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
@@ -229,6 +232,7 @@
           "id": "epd-svc",
           "rawdata": "svcrec.krd",
           "stall": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [
