@@ -1,0 +1,436 @@
+{
+  "name": "Aviation Meteorology",
+  "description": "Aviation Meteorology Monitoring Objects",
+  "id": "amd",
+  "ds": {
+    "MAWS": {
+      "messages": {
+        "default": {
+          "id": "AWS-BASIC",
+          "rawdata": "maws.awsbasic.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "ff2",
+                "type": "numeric"
+              },
+              {
+                "name": "dd2",
+                "type": "numeric"
+              },
+              {
+                "name": "ff2_min",
+                "type": "numeric"
+              },
+              {
+                "name": "ff2_max",
+                "type": "numeric"
+              },
+              {
+                "name": "dd2_min",
+                "type": "numeric"
+              },
+              {
+                "name": "dd2_max",
+                "type": "numeric"
+              },
+              {
+                "name": "ff10",
+                "type": "numeric"
+              },
+              {
+                "name": "dd10",
+                "type": "numeric"
+              },
+              {
+                "name": "ff10_min",
+                "type": "numeric"
+              },
+              {
+                "name": "ff10_max",
+                "type": "numeric"
+              },
+              {
+                "name": "dd10_min",
+                "type": "numeric"
+              },
+              {
+                "name": "dd10_max",
+                "type": "numeric"
+              },
+              {
+                "name": "Rff10",
+                "type": "numeric"
+              },
+              {
+                "name": "Rff60",
+                "type": "numeric"
+              },
+              {
+                "name": "ta",
+                "type": "numeric"
+              },
+              {
+                "name": "ur",
+                "type": "numeric"
+              },
+              {
+                "name": "td",
+                "type": "numeric"
+              },
+              {
+                "name": "p0",
+                "type": "numeric"
+              },
+              {
+                "name": "qnh",
+                "type": "numeric"
+              },
+              {
+                "name": "qfe",
+                "type": "numeric"
+              },
+              {
+                "name": "qff",
+                "type": "numeric"
+              },
+              {
+                "name": "a",
+                "type": "numeric"
+              },
+              {
+                "name": "ppp",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ff2",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "dd2",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "ff2_min",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "ff2_max",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "dd2_min",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "dd2_max",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "ff10",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "dd10",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "ff10_min",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "ff10_max",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "dd10_min",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "dd10_max",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "Rff10",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "Rff60",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "ta",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "td",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "ur",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "p0",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "qnh",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "qfe",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "qff",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "a",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            },
+            {
+                "name": "ppp",
+                "functions": {
+                    "LAST": [ [60, 60] ]
+                }
+            }
+          ]
+        },
+        "instrument": {
+          "id": "TMV1",
+          "rawdata": "maws.tmv1.krd",
+          "stall": 30,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "ws",
+                "type": "instrument"
+              },
+              {
+                "name": "wd",
+                "type": "instrument"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ws",
+                "functions": {
+                    "LAST": [ [10, 5] ]
+                }
+            },
+            {
+                "name": "wd",
+                "functions": {
+                    "LAST": [ [10, 5] ]
+                }
+            }
+          ]
+        },
+        "inventory": {
+	        "id": "AWS-STATUS",
+          "rawdata": "inventory.krd",
+          "stall": 60,
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "runway_dd",
+                "type": "inventory"
+              },
+              {
+                "name": "runway_ends",
+                "type": "inventory"
+              },
+              {
+                "name": "ext_dc",
+                "type": "inventory"
+              },
+              {
+                "name": "wind_status",
+                "type": "inventory"
+              },
+              {
+                "name": "ta_status",
+                "type": "inventory"
+              },
+              {
+                "name": "rh_status",
+                "type": "inventory"
+              },
+              {
+                "name": "pa_status",
+                "type": "inventory"
+              },
+              {
+                "name": "log_space",
+                "type": "inventory"
+              },
+              {
+                "name": "mem_inst",
+                "type": "inventory"
+              },
+              {
+                "name": "mem_min",
+                "type": "inventory"
+              },
+              {
+                "name": "warn",
+                "type": "inventory"
+              },
+              {
+                "name": "err",
+                "type": "inventory"
+              },
+              {
+                "name": "qml_status",
+                "type": "inventory"
+              },
+              {
+                "name": "reset_cause",
+                "type": "inventory"
+              },
+              {
+                "name": "uptime",
+                "type": "inventory"
+              }
+            ]
+          },
+          "statistics": {}
+        }
+      }
+    }
+  }
+}
