@@ -3520,7 +3520,7 @@
           "id": "dpd-svc",
           "rawdata": "svcrec.krd",
           "stall": 300,
-          "sli": 300,
+          "sli": "yes",
           "format": {
             "fields_separator": ":",
             "fields": [

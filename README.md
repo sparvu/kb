@@ -1,4 +1,3 @@
-![](https://raw.github.com/kronometrix/lmo/master/img/lmo_logo.png)
 # The Library of Monitoring Objects - LMO
 
 ## Scope
