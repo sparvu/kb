@@ -248,11 +248,11 @@
         }
       }
     },
-    "vaisala_aws310pwd_sck": {
+    "vaisala_aws310pwd_skr": {
       "messages": {
         "basic": {
-          "id": "aws310pwd_sck-basic",
-          "rawdata": "aws310pwd_sck.basic.krd",
+          "id": "aws310pwd_skr-basic",
+          "rawdata": "aws310pwd_skr.basic.krd",
           "stall": 120,
           "sli": "yes",
           "format": {
@@ -294,8 +294,8 @@
           ]
         },
         "synop": {
-          "id": "aws310pwd_sck-synop",
-          "rawdata": "aws310pwd_sck.synop.krd",
+          "id": "aws310pwd_skr-synop",
+          "rawdata": "aws310pwd_skr.synop.krd",
           "stall": 7200,
           "sli": "yes",
           "format": {
@@ -341,8 +341,8 @@
           ]
         },
         "info": {
-          "id": "aws310pwd_sck-info",
-          "rawdata": "aws310pwd_sck.info.krd",
+          "id": "aws310pwd_skr-info",
+          "rawdata": "aws310pwd_skr.info.krd",
           "stall": 21600,
           "sli": "yes",
           "format": {
