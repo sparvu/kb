@@ -1,0 +1,385 @@
+{
+  "name": "General Meteorology",
+  "description": "General Meteorology Data Definition",
+  "id": "wcd",
+  "ds": {
+    "foshk_wh1080": {
+      "messages": {
+        "default": {
+          "id": "linux-wsrec",
+          "rawdata": "wh1080.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "ih",
+                "type": "numeric"
+              },
+              {
+                "name": "oh",
+                "type": "numeric"
+              },
+              {
+                "name": "ita",
+                "type": "numeric",
+                "range": {
+                    "min": -50,
+                    "max": 50
+                }
+              },
+              {
+                "name": "ota",
+                "type": "numeric",
+                "range": {
+                    "min": -50,
+                    "max": 50
+                }
+              },
+              {
+                "name": "dpa",
+                "type": "numeric"
+              },
+              {
+                "name": "wca",
+                "type": "numeric"
+              },
+              {
+                "name": "wind",
+                "type": "numeric",
+                "range": {
+                    "min": 0
+                }
+              },
+              {
+                "name": "wgust",
+                "type": "numeric"
+              },
+              {
+                "name": "wd",
+                "type": "instrument"
+              },
+              {
+                "name": "rain1",
+                "type": "numeric"
+              },
+              {
+                "name": "rain24",
+                "type": "numeric"
+              },
+              {
+                "name": "totalrain",
+                "type": "numeric"
+              },
+              {
+                "name": "pres",
+                "type": "numeric"
+              },
+              {
+                "name": "hash",
+                "type": "hash",
+                "function": "sha256"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ih",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "oh",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "ita",
+                "functions": {
+                    "COUNT": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [600, 600], [86400, 86400], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "MIN": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "MAX": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "ota",
+                "functions": {
+                    "COUNT": [ [60, 60], [86400, 86400], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [60, 60], [86400, 86400], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [600, 600], [86400, 86400], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "MIN": [ [86400, 86400], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "MAX": [ [86400, 86400], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            },
+            {
+                "name": "pres",
+                "functions": {
+                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "LAST": [ [60, 60], [600, 600], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "MIN": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
+                    "MAX": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            }
+          ]
+        }
+      }
+    },
+    "vaisala_wxt530": {
+      "messages": {
+        "basic": {
+          "id": "wxt530_basic",
+          "rawdata": "wxt530.basic.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "ff10",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ff10",
+                "functions": {
+                    "LAST": [ [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            }
+          ]
+        }
+      }
+    },
+    "vaisala_pwd50": {
+      "messages": {
+        "basic": {
+          "id": "pwd50_basic",
+          "rawdata": "pwd50.basic.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "ff10",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ff10",
+                "functions": {
+                    "LAST": [ [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            }
+          ]
+        }
+      }
+    },
+    "vaisala_aws310pwd_sck": {
+      "messages": {
+        "basic": {
+          "id": "aws310pwd_sck-basic",
+          "rawdata": "aws310pwd_sck.basic.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "ff10",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ff10",
+                "functions": {
+                    "LAST": [ [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            }
+          ]
+        },
+        "synop": {
+          "id": "aws310pwd_sck-synop",
+          "rawdata": "aws310pwd_sck.synop.krd",
+          "stall": 7200,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ",",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "ta_status",
+                "type": "inventory"
+              },
+              {
+                "name": "ta",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ta",
+                "functions": {
+                    "LAST": [ [3600, 3600] ]
+                }
+            }
+          ]
+        },
+        "info": {
+          "id": "aws310pwd_sck-info",
+          "rawdata": "aws310pwd_sck.info.krd",
+          "stall": 21600,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "pluvio2_temperature",
+                "functions": {
+                    "LAST": [ [2592000, 10800] ]
+                }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

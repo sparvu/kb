@@ -3,7 +3,7 @@
   "description": "Environmental Monitoring Indoor Air Quality Objects",
   "id": "iaqd",
   "ds": {
-    "iaq_tongdy_g01": {
+    "tongdy_g01": {
       "messages": {
         "iaq_g01": {
           "id": "iaq_g01",
@@ -110,7 +110,7 @@
         }
       }
     },
-    "iaq_vaisala_gmw90": {
+    "vaisala_gmw90": {
       "messages": {
         "iaq_gmw90": {
           "id": "iaq_gmw90",
@@ -204,7 +204,7 @@
         }
       }
     },
-    "iaq_tongdy_msd1618": {
+    "tongdy_msd1618": {
       "messages": {
         "iaq_msd1618": {
           "id": "iaq_msd1618",
