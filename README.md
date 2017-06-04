@@ -7,22 +7,27 @@ The main idea here is to define and describe a set of metrics which can be easil
 real-time web analytic, data analytic software, data reporting software as a open standard format, JSON or XML based.
 
 ## Why ?
-Because in general people collect thousands of metrics without any idea what to do with them or if they really need them. Even more because people spend a tremendous amount of time developing within their organizations such metrics which become obsolete and not maintained after some time. And because their is no minimal standardization efforts, regarding computer performance data, for example. 
+Because in general people collect thousands of metrics without any idea what to do with them or if they really need them. 
+Even more because people spend a tremendous amount of time developing software to fetch, collect and maintain such metrics 
+which become obsolete and not maintained after some time. 
 
 ## To Whom ?
-Individuals, experts and companies involved in data analysis, analytics, monitoring are called to discuss, review and contribute to these metric definitions.
+Software engineers, experts, meteorologists, companies involved in data analysis, analytics and performance monitoring
+from ICT to weather and environmental monitoring.
 
 
 ## Summary Statistics
-
+A series of summary statistic functions, defined for all metrics collected, like MAX, MIN, SUM, COUNT
+or MEAN, PERCENTILE. These functions are direct involved in turning data into useful information. These
+summary statistics have been developed by experts from each industry, by carefully looking and analysing
+what information is required by the end-user or applications.
 
 ## Format
-We plan offering the library as JSON files, by default. Additional formats will be available: XML, YAML.
-
+Currently the library is structured as a series of JSON, XML, YAML files.
 
 ## Industries
-The LMO can map and describe data from different industries, currently handling ICT, 
-Meteorology and Environmental Monitoring.
+The LMO can map and describe data from different industries, currently handling ICT, Meteorology and 
+Environmental Monitoring.
 
 ![](https://raw.github.com/sparvu/lmo/master/img/lmo-light.png)
 
