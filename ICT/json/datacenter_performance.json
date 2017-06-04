@@ -8,7 +8,7 @@
         "sysrec": {
           "id": "dpd-freebsd-sysrec",
           "rawdata": "sysrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -519,7 +519,7 @@
         "cpurec": {
           "id": "dpd-freebsd-cpurec",
           "rawdata": "cpurec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -635,7 +635,7 @@
         "diskrec": {
           "id": "dpd-freebsd-diskrec",
           "rawdata": "diskrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -805,7 +805,7 @@
         "nicrec": {
           "id": "dpd-freebsd-nicrec",
           "rawdata": "nicrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -1043,7 +1043,7 @@
         "sysrec": {
           "id": "dpd-linux-sysrec",
           "rawdata": "sysrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -1490,7 +1490,7 @@
         "cpurec": {
           "id": "dpd-linux-cpurec",
           "rawdata": "cpurec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -1627,7 +1627,7 @@
         "diskrec": {
           "id": "dpd-linux-diskrec",
           "rawdata": "diskrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -1767,7 +1767,7 @@
         "nicrec": {
           "id": "dpd-linux-nicrec",
           "rawdata": "nicrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -2045,7 +2045,7 @@
         "sysrec": {
           "id": "dpd-sunos-sysrec",
           "rawdata": "sysrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -2242,7 +2242,7 @@
         "cpurec": {
           "id": "dpd-sunos-cpurec",
           "rawdata": "cpurec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -2303,7 +2303,7 @@
         "diskrec": {
           "id": "dpd-sunos-diskrec",
           "rawdata": "diskrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -2368,7 +2368,7 @@
         "nicrec": {
           "id": "dpd-sunos-nicrec",
           "rawdata": "nicrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -2555,7 +2555,7 @@
         "sysrec": {
           "id": "dpd-win-sysrec",
           "rawdata": "sysrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -2924,7 +2924,7 @@
         "cpurec": {
           "id": "dpd-win-cpurec",
           "rawdata": "cpurec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -3035,7 +3035,7 @@
         "diskrec": {
           "id": "dpd-win-diskrec",
           "rawdata": "diskrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -3204,7 +3204,7 @@
         "nicrec": {
           "id": "dpd-win-nicrec",
           "rawdata": "nicrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -3519,7 +3519,7 @@
         "dpd-svc": {
           "id": "dpd-svc",
           "rawdata": "svcrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
