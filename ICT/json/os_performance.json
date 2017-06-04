@@ -8,7 +8,7 @@
         "sysrec": {
           "id": "android-sysrec",
           "rawdata": "sysrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -186,7 +186,7 @@
         "sysrec": {
           "id": "freebsd-sysrec",
           "rawdata": "sysrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -697,7 +697,7 @@
         "cpurec": {
           "id": "freebsd-cpurec",
           "rawdata": "cpurec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -813,7 +813,7 @@
         "diskrec": {
           "id": "freebsd-diskrec",
           "rawdata": "diskrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -983,7 +983,7 @@
         "nicrec": {
           "id": "freebsd-nicrec",
           "rawdata": "nicrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -1233,7 +1233,7 @@
         "sysrec": {
           "id": "linux-sysrec",
           "rawdata": "sysrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -1680,7 +1680,7 @@
         "cpurec": {
           "id": "linux-cpurec",
           "rawdata": "cpurec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -1835,7 +1835,7 @@
         "diskrec": {
           "id": "linux-diskrec",
           "rawdata": "diskrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -1975,7 +1975,7 @@
         "nicrec": {
           "id": "linux-nicrec",
           "rawdata": "nicrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -2253,7 +2253,7 @@
         "sysrec": {
           "id": "sunos-sysrec",
           "rawdata": "sysrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -2450,7 +2450,7 @@
         "cpurec": {
           "id": "sunos-cpurec",
           "rawdata": "cpurec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -2511,7 +2511,7 @@
         "diskrec": {
           "id": "sunos-diskrec",
           "rawdata": "diskrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -2576,7 +2576,7 @@
         "nicrec": {
           "id": "sunos-nicrec",
           "rawdata": "nicrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -3149,7 +3149,7 @@
         "cpurec": {
           "id": "win-cpurec",
           "rawdata": "cpurec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -3265,7 +3265,7 @@
         "diskrec": {
           "id": "win-diskrec",
           "rawdata": "diskrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -3434,7 +3434,7 @@
         "nicrec": {
           "id": "win-nicrec",
           "rawdata": "nicrec.krd",
-          "stall": 300,
+          "stall": 180,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
