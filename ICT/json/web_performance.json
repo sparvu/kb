@@ -244,6 +244,10 @@
                 "type": "numeric"
               },
               {
+                "name": "plistsz",
+                "type": "numeric"
+              },
+              {
                 "name": "memusedpct",
                 "type": "numeric"
               },
