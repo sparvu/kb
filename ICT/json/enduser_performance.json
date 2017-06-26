@@ -8,7 +8,7 @@
         "epd-ttfb": {
           "id": "epd-ttfb",
           "rawdata": "perf.krd",
-          "stall": 180,
+          "stall": 300,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
@@ -231,7 +231,7 @@
         "epd-svc": {
           "id": "epd-svc",
           "rawdata": "svcrec.krd",
-          "stall": 180,
+          "stall": 300,
           "sli": "yes",
           "format": {
             "fields_separator": ":",
