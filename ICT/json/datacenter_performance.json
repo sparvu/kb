@@ -989,6 +989,10 @@
                 "type": "inventory"
               },
               {
+                "name": "model",
+                "type": "inventory"
+              },
+              {
                 "name": "hypervisor",
                 "type": "inventory"
               },
@@ -1988,6 +1992,10 @@
                 "type": "inventory"
               },
               {
+                "name": "model",
+                "type": "inventory"
+              },
+              {
                 "name": "hypervisor",
                 "type": "inventory"
               },
@@ -2495,6 +2503,10 @@
               },
               {
                 "name": "hdw",
+                "type": "inventory"
+              },
+              {
+                "name": "model",
                 "type": "inventory"
               },
               {
@@ -3407,6 +3419,10 @@
               },
               {
                 "name": "hdw",
+                "type": "inventory"
+              },
+              {
+                "name": "model",
                 "type": "inventory"
               },
               {
