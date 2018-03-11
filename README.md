@@ -2,7 +2,7 @@
 
 ## Scope
 A list of of metrics and summary statistics, specific to different industries and businesses 
-like _IoT_, _computer performance data_, _meteorology_, _healthcare_, _environmental monitoring_.
+like _IIoT_, _computer performance data_, _meteorology_, _healthcare_, _environmental monitoring_.
 The main idea here is to define and describe a set of metrics which can be easily used in software products like, 
 real-time web analytic, data analytic software, data reporting software as a open standard format, JSON or 
 XML based.
