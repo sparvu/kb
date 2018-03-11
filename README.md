@@ -31,11 +31,11 @@ Environmental Monitoring. We are starting to work and define different object ty
 
 ![](https://raw.github.com/sparvu/lmo/master/img/lmo-light.png)
 
- * Industrial IoT  
- * Business Intelligence (BI)
- * Climatology
+ * Industrial IoT (IIoT)
  * Environmental Monitoring
  * Finance
  * Healthcare
  * Information Communications & Technology (ICT)
+ * Climatology
  * Meteorology
+ 
