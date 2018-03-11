@@ -216,6 +216,233 @@
         }
       }
     },
+    "vwxt530": {
+      "messages": {
+        "default": {
+          "id": "vwxt530",
+          "rawdata": "vwxt530.krd",
+          "stall": 300,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "ff10",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ff10",
+                "functions": {
+                    "LAST": [ [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            }
+          ]
+        }
+      }
+    },
+    "vpwd50": {
+      "messages": {
+        "default": {
+          "id": "vpwd50",
+          "rawdata": "vpwd50.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "ff10",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ff10",
+                "functions": {
+                    "LAST": [ [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            }
+          ]
+        }
+      }
+    },
+    "vaws310": {
+      "messages": {
+        "pwd": {
+          "id": "vaws310-pwd",
+          "rawdata": "vaws310-pwd.krd",
+          "stall": 300,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "ff10",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ff10",
+                "functions": {
+                    "LAST": [ [86400, 600], [604800, 3600], [2592000, 10800] ]
+                }
+            }
+          ]
+        },
+        "synop": {
+          "id": "vaws310-synop",
+          "rawdata": "vaws310-synop.krd",
+          "stall": 7200,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ",",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              },
+              {
+                "name": "ta_status",
+                "type": "inventory"
+              },
+              {
+                "name": "ta",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "ta",
+                "functions": {
+                    "LAST": [ [3600, 3600] ]
+                }
+            }
+          ]
+        },
+        "info": {
+          "id": "vaws310-info",
+          "rawdata": "vaws310-info.krd",
+          "stall": 21600,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "iso"
+              }
+            ]
+          },
+          "statistics": [
+            {
+                "name": "pluvio2_temperature",
+                "functions": {
+                    "LAST": [ [2592000, 10800] ]
+                }
+            }
+          ]
+        }
+      }
+    },
     "aws": {
       "messages": {
         "meteo": {
