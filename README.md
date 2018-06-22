@@ -1,6 +1,5 @@
-[![](https://github.com/sparvu/lmo/blob/master/docs/img/license.svg)](LICENSE)
-
 # The Library of Monitoring Objects - LMO
+[![](https://github.com/sparvu/lmo/blob/master/docs/img/license.svg)](LICENSE)
 
 ## Overview
 A library set of objects, mapping real-world entities, like weather stations, environmental sensors, computer and network systems, operating systems, entreprise services including the metrics and summary statistics required for analysing their performance, availability and reliability. The objects are grouped by specific industries, like ICT, Environmental Monitoring, Meterology, Business Intelligence, IIoT. 
