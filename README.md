@@ -1,3 +1,5 @@
+[![](https://github.com/sparvu/lmo/blob/master/docs/img/license.svg)](LICENSE)
+
 # The Library of Monitoring Objects - LMO
 
 ## Overview
