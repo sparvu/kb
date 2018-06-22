@@ -8,7 +8,7 @@ In general, people collect thousands of metrics without any idea what to do with
 The library is designed for software engineers, devops, scientists, analysts, meteorologists and companies involved in data analysis, performance monitoring and analytics.
 
 * [Design](docs/design.md)
-* [Data mapping](docs/mapping.md)
+* [Data mapping]()
 * [Contributing and support](docs/contributing.md)
 
 
