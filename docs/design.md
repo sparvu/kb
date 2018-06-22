@@ -1,4 +1,4 @@
-## Concepts
+## Design
 
 ### Data source
 A data source, is described as a system connected to a public or private network with at least one valid IPv4 or IPv6 address, capable to send and receive data. Example: a server, a logger, a graphic workstation, or an IoT sensor. Examples:
@@ -45,5 +45,5 @@ Example: _the CPU utilization metric, with MAX, COUNT, SUM, LAST summary statist
 ]
 ```
 
-## Format
+### Format
 Currently the library is structured as a series of JSON, XML, YAML files.
