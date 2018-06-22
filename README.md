@@ -16,7 +16,7 @@ The library is designed for software engineers, devops, scientists, analysts, me
 The LMO can map and describe data from different industries, currently handling ICT, Meteorology and 
 Environmental Monitoring. We are starting to work and define different object types for IoT and IIoT.
 
-![](https://raw.github.com/sparvu/lmo/master/img/lmo-light.png)
+![](https://raw.github.com/sparvu/lmo/master/docs/img/lmo-light.png)
 
  * Industrial IoT (IIoT)
  * Environmental Monitoring
