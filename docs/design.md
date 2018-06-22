@@ -29,7 +29,8 @@ The function is defined as a time interval defined: __function__[seconds, precis
  * MAX[300,300] - stores a single value over 5 minutes for a certain metric
 
 
-Example:
+Example: _the CPU utilization metric, with MAX, COUNT, SUM, LAST summary statistics functions_
+
 ```
 "statistics": [
   {
