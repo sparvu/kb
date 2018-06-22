@@ -1,7 +1,6 @@
 # The Library of Monitoring Objects - LMO
 
 ## Overview
-
 A set of data source objects, mapping real-world entities, like weather stations, environmental sensors, ICT infrastructure: computer, network systems, operating systems, entreprise services including the metrics and summary statistics required for analysing their performance, availability and reliability. The objects are grouped by specific industries, like ICT, Environmental Monitoring, Meterology, Business Intelligence, IIoT.
 
 In general, people collect thousands of metrics without any idea what to do with them or if they _really_ need them. Even more  people spend a tremendous amount of time developing solutions to collect and analyse such metrics which soon become deprecated and not useful anymore. The library of monitoring objects is essential and central for any data analytics process from data recording to analysis and visualization. 
@@ -11,7 +10,6 @@ The library is designed for software engineers, devops, scientists, analysts, me
 ## Concepts
 
 ### Data source
-
 A data source, is described as a system connected to a public or private network with at least one valid IPv4 or IPv6 address, capable to send and receive data. Example: a server, a logger, a graphic workstation, or an IoT sensor. Examples:
 
  * Computer systems
