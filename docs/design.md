@@ -20,6 +20,9 @@ statistics, the devices.
 
 ![](https://github.com/sparvu/lmo/blob/master/docs/img/DS.Object.svg)
 
+<img src="https://github.com/sparvu/lmo/blob/master/docs/img/DS.Object.svg" align="center" />
+<br/>
+
 ### Data message
 All collected metrics over time are combined as a data message. There can be many types of
  data messages: metrics regarding computer system utilization cpu or memory utilization, 
