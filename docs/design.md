@@ -15,7 +15,9 @@ least one valid IPv4 or IPv6 address, capable to send and receive data. Example:
  
  * Weather stations
 
-This is the structure of a data source object.
+Below you can see the structure of a data source object, including its messages, summary
+statistics, the devices.
+
 ![](https://github.com/sparvu/lmo/blob/master/docs/img/DS.Object.svg)
 
 ### Data message
