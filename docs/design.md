@@ -18,8 +18,8 @@ least one valid IPv4 or IPv6 address, capable to send and receive data. Example:
 Below you can see the structure of a data source object, including its messages, summary
 statistics, the devices.
 
-<img src="https://github.com/sparvu/lmo/blob/master/docs/img/DS.Object.svg" align="center" />
-<br/><br/>
+<img src="https://github.com/sparvu/lmo/blob/master/docs/img/DS.Object.svg" />
+<br/>
 
 ### Data message
 All collected metrics over time are combined as a data message. There can be many types of
