@@ -15,6 +15,8 @@ least one valid IPv4 or IPv6 address, capable to send and receive data. Example:
  
  * Weather stations
 
+This is the structure of a data source object.
+
 ### Data message
 All collected metrics over time are combined as a data message. There can be many types of
  data messages: metrics regarding computer system utilization cpu or memory utilization, 
