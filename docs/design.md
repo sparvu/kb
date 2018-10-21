@@ -20,7 +20,7 @@ statistics, the devices.
 
 ![](https://github.com/sparvu/lmo/blob/master/docs/img/DS.Object.svg)
 
-<img src="https://github.com/sparvu/lmo/blob/master/docs/img/DS.Object.svg" align="center" />
+<img src="https://github.com/sparvu/lmo/blob/master/docs/img/DS.Object.svg" align="right" />
 <br/>
 
 ### Data message
