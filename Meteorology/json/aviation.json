@@ -4,6 +4,7 @@
   "id": "amd",
   "ds": {
     "MAWS": {
+      "description": "MAWS standard messages",
       "messages": {
         "default": {
           "id": "AWS-BASIC",
@@ -129,160 +130,167 @@
           },
           "statistics": [
             {
-                "name": "ff2",
-                "functions": {
-                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
-                }
+              "name": "ff2",
+              "functions": {
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "LAST": [ [ 60, 60 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
             },
             {
-                "name": "dd2",
-                "functions": {
-                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
+              "name": "dd2",
+              "functions": {
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "LAST": [ [ 60, 60 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "FQC": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              },
+              "params": {
+                "FQC": {
+                  "bins": [ [0, 10], [10, 30], [30, 50], [50, 70], [70, 90], [90, 110], [110, 130], [130, 150], [150, 170], [170, 190], [190, 210], [210, 230], [230, 250], [250, 270], [270, 290], [290, 310], [310, 330], [330, 350], [350, 361] ],
+                  "multi-param-with": "ff2",
+                  "multi-param-bins": [ [0, 1], [1, 4], [4, 8], [8, 12], [12, 16], [16, 1000] ]
                 }
+              }
             },
             {
-                "name": "ff2_min",
-                "functions": {
-                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
-                }
+              "name": "ff2_min",
+              "functions": {
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "LAST": [ [ 60, 60 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
             },
             {
-                "name": "ff2_max",
-                "functions": {
-                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
-                }
+              "name": "ff2_max",
+              "functions": {
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "LAST": [ [ 60, 60 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
             },
             {
-                "name": "dd2_min",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "dd2_min",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "dd2_max",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "dd2_max",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "ff10",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "ff10",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "dd10",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "dd10",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "ff10_min",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "ff10_min",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "ff10_max",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "ff10_max",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "dd10_min",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "dd10_min",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "dd10_max",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "dd10_max",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "Rff10",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "Rff10",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "Rff60",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "Rff60",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "ta",
-                "functions": {
-                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
-                }
+              "name": "ta",
+              "functions": {
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "LAST": [ [ 60, 60 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
             },
             {
-                "name": "td",
-                "functions": {
-                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
-                }
+              "name": "td",
+              "functions": {
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "LAST": [ [ 60, 60 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
             },
             {
-                "name": "ur",
-                "functions": {
-                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
-                }
+              "name": "ur",
+              "functions": {
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "LAST": [ [ 60, 60 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
             },
             {
-                "name": "p0",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "p0",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "qnh",
-                "functions": {
-                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
-                }
+              "name": "qnh",
+              "functions": {
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "LAST": [ [ 60, 60 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
             },
             {
-                "name": "qfe",
-                "functions": {
-                    "COUNT": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "SUM": [ [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ],
-                    "LAST": [ [60, 60], [10800, 60], [86400, 600], [604800, 3600], [2592000, 10800] ]
-                }
+              "name": "qfe",
+              "functions": {
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "LAST": [ [ 60, 60 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
             },
             {
-                "name": "qff",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "qff",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "a",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "a",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             },
             {
-                "name": "ppp",
-                "functions": {
-                    "LAST": [ [60, 60] ]
-                }
+              "name": "ppp",
+              "functions": {
+                "LAST": [ [ 60, 60 ] ]
+              }
             }
           ]
         },
@@ -326,21 +334,21 @@
           },
           "statistics": [
             {
-                "name": "ws",
-                "functions": {
-                    "LAST": [ [10, 5] ]
-                }
+              "name": "ws",
+              "functions": {
+                "LAST": [ [ 10, 5 ] ]
+              }
             },
             {
-                "name": "wd",
-                "functions": {
-                    "LAST": [ [10, 5] ]
-                }
+              "name": "wd",
+              "functions": {
+                "LAST": [ [ 10, 5 ] ]
+              }
             }
           ]
         },
         "inventory": {
-	        "id": "AWS-STATUS",
+          "id": "AWS-STATUS",
           "rawdata": "inventory.krd",
           "stall": 60,
           "format": {
@@ -429,6 +437,2636 @@
             ]
           },
           "statistics": {}
+        }
+      }
+    },
+    "AVIMET": {
+      "description": "AviMet standard messages",
+      "messages": {
+        "cloud": {
+          "id": "amd-avimet-cloud",
+          "rawdata": "avimet.cloud.krd",
+          "stall": 60,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "ISSKYCLEAR",
+                "type": "numeric"
+              },
+              {
+                "name": "ISVERVIS",
+                "type": "numeric"
+              },
+              {
+                "name": "VERVIS",
+                "type": "numeric"
+              },
+              {
+                "name": "CLOUDBASE",
+                "type": "numeric"
+              },
+              {
+                "name": "CH1INS",
+                "type": "numeric"
+              },
+              {
+                "name": "CH2INS",
+                "type": "numeric"
+              },
+              {
+                "name": "CH3INS",
+                "type": "numeric"
+              },
+              {
+                "name": "AMOUNT1",
+                "type": "numeric"
+              },
+              {
+                "name": "CH1",
+                "type": "numeric"
+              },
+              {
+                "name": "AMOUNT2",
+                "type": "numeric"
+              },
+              {
+                "name": "CH2",
+                "type": "numeric"
+              },
+              {
+                "name": "AMOUNT3",
+                "type": "numeric"
+              },
+              {
+                "name": "CH3",
+                "type": "numeric"
+              },
+              {
+                "name": "AMOUNT4",
+                "type": "numeric"
+              },
+              {
+                "name": "CH4",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "VERVIS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "CLOUDBASE",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "CH1INS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "CH2INS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "CH3INS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "AMOUNT1",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "CH1",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "AMOUNT2",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "CH2",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "AMOUNT3",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "CH3",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "AMOUNT4",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "CH4",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            }
+          ]
+        },
+        "humitemp": {
+          "id": "amd-avimet-humitemp",
+          "rawdata": "avimet.humitemp.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "TAINS",
+                "type": "numeric"
+              },
+              {
+                "name": "TA10M",
+                "type": "numeric"
+              },
+              {
+                "name": "TA10X",
+                "type": "numeric"
+              },
+              {
+                "name": "TA1hA",
+                "type": "numeric"
+              },
+              {
+                "name": "TA1hM",
+                "type": "numeric"
+              },
+              {
+                "name": "TA1hX",
+                "type": "numeric"
+              },
+              {
+                "name": "TDINS",
+                "type": "numeric"
+              },
+              {
+                "name": "RHINS",
+                "type": "numeric"
+              },
+              {
+                "name": "VPINS",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "TAINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "TA10M",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "TA10X",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "TA1hA",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "TA1hM",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "TA1hX",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "TDINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "RHINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "VPINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            }
+          ]
+        },
+        "press": {
+          "id": "amd-avimet-press",
+          "rawdata": "avimet.press.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "PAINS",
+                "type": "numeric"
+              },
+              {
+                "name": "QFEINS",
+                "type": "numeric"
+              },
+              {
+                "name": "QFEM",
+                "type": "numeric"
+              },
+              {
+                "name": "QFEX",
+                "type": "numeric"
+              },
+              {
+                "name": "QFFINS",
+                "type": "numeric"
+              },
+              {
+                "name": "QNHINS",
+                "type": "numeric"
+              },
+              {
+                "name": "QFESYNOP",
+                "type": "numeric"
+              },
+              {
+                "name": "QFESYNOPT",
+                "type": "numeric"
+              },
+              {
+                "name": "QFESYNOP3H",
+                "type": "numeric"
+              },
+              {
+                "name": "FL",
+                "type": "numeric"
+              },
+              {
+                "name": "ALT",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "PAINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "QFEINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "QFEM",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "QFEX",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "QFFINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "QNHINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "QFESYNOP",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "QFESYNOPT",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "QFESYNOP3H",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "FL",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "ALT",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            }
+          ]
+        },
+        "rain": {
+          "id": "amd-avimet-rain",
+          "rawdata": "avimet.rain.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "RAINON",
+                "type": "numeric"
+              },
+              {
+                "name": "DURATION_1H",
+                "type": "numeric"
+              },
+              {
+                "name": "AMOUNT_INS",
+                "type": "numeric"
+              },
+              {
+                "name": "SUM_INS",
+                "type": "numeric"
+              },
+              {
+                "name": "SUM_1H",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "RAINON",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "DURATION_1H",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "AMOUNT_INS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "SUM_INS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "SUM": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "SUM_1H",
+              "functions": {
+                "LAST": [ [ 240, 120 ], [ 2592000, 3600 ] ],
+                "SUM": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            }
+          ]
+        },
+        "vis": {
+          "id": "amd-avimet-vis",
+          "rawdata": "avimet.vis.krd",
+          "stall": 30,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "RawRVR",
+                "type": "numeric"
+              },
+              {
+                "name": "RVR",
+                "type": "numeric"
+              },
+              {
+                "name": "RVR1A",
+                "type": "numeric"
+              },
+              {
+                "name": "RVR1A10M",
+                "type": "numeric"
+              },
+              {
+                "name": "RVR1A10X",
+                "type": "numeric"
+              },
+              {
+                "name": "RVR2A",
+                "type": "numeric"
+              },
+              {
+                "name": "RVR10A",
+                "type": "numeric"
+              },
+              {
+                "name": "RVR10M",
+                "type": "numeric"
+              },
+              {
+                "name": "RVR10X",
+                "type": "numeric"
+              },
+              {
+                "name": "RVR10T",
+                "type": "numeric"
+              },
+              {
+                "name": "RawMOR",
+                "type": "numeric"
+              },
+              {
+                "name": "MOR",
+                "type": "numeric"
+              },
+              {
+                "name": "MOR1A",
+                "type": "numeric"
+              },
+              {
+                "name": "MOR2A",
+                "type": "numeric"
+              },
+              {
+                "name": "MOR10A",
+                "type": "numeric"
+              },
+              {
+                "name": "MOR10M",
+                "type": "numeric"
+              },
+              {
+                "name": "MOR10X",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS1K",
+                "type": "numeric"
+              },
+              {
+                "name": "RawVIS",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS1A",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS2A",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS10A",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS10M",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS10X",
+                "type": "numeric"
+              },
+              {
+                "name": "BL",
+                "type": "numeric"
+              },
+              {
+                "name": "BL1A",
+                "type": "numeric"
+              },
+              {
+                "name": "BL2A",
+                "type": "numeric"
+              },
+              {
+                "name": "LIGHTS",
+                "type": "numeric"
+              },
+              {
+                "name": "EDGELIGHTS",
+                "type": "numeric"
+              },
+              {
+                "name": "CENTERLIGHTS",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "RawRVR",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "RVR",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "RVR1A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "RVR1A10M",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "RVR1A10X",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "RVR2A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "RVR10A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "FQC": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              },
+              "params": {
+                "FQC": {
+                  "bins": [ [0, 200], [200, 400], [400, 600], [600, 800], [800, 1000], [1000, 1200], [1200, 1600], [1600, 2000], [2000, 3000], [3000, 4000], [4000, 5000], [5000, 1000000] ]
+                }
+              }
+            },
+            {
+              "name": "RVR10M",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "RVR10X",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "RVR10T",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "RawMOR",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "MOR",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "MOR1A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "MOR2A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "MOR10A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "FQC": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              },
+              "params": {
+                "FQC": {
+                  "bins": [ [0, 200], [200, 400], [400, 600], [600, 800], [800, 1000], [1000, 1200], [1200, 1600], [1600, 2000], [2000, 3000], [3000, 4000], [4000, 5000], [5000, 1000000] ]
+                }
+              }
+            },
+            {
+              "name": "MOR10M",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "MOR10X",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS1K",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "RawVIS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS1A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS2A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS10A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS10M",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS10X",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "BL",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "BL1A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "BL2A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "LIGHTS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "EDGELIGHTS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "CENTERLIGHTS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            }
+          ]
+        },
+        "wind": {
+          "id": "amd-avimet-wind",
+          "rawdata": "avimet.wind.krd",
+          "stall": 30,
+          "sli": "no",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "WSINS",
+                "type": "numeric"
+              },
+              {
+                "name": "WDINS",
+                "type": "numeric"
+              },
+              {
+                "name": "WS2A",
+                "type": "numeric"
+              },
+              {
+                "name": "WS2M",
+                "type": "numeric"
+              },
+              {
+                "name": "WS2X",
+                "type": "numeric"
+              },
+              {
+                "name": "WD2A",
+                "type": "numeric"
+              },
+              {
+                "name": "WD2M",
+                "type": "numeric"
+              },
+              {
+                "name": "WD2X",
+                "type": "numeric"
+              },
+              {
+                "name": "WS10A",
+                "type": "numeric"
+              },
+              {
+                "name": "WS10M",
+                "type": "numeric"
+              },
+              {
+                "name": "WS10X",
+                "type": "numeric"
+              },
+              {
+                "name": "WD10A",
+                "type": "numeric"
+              },
+              {
+                "name": "WD10M",
+                "type": "numeric"
+              },
+              {
+                "name": "WD10X",
+                "type": "numeric"
+              },
+              {
+                "name": "HW2A",
+                "type": "numeric"
+              },
+              {
+                "name": "CW2A",
+                "type": "numeric"
+              },
+              {
+                "name": "CW2A_KT_STR",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "CW2A_MPS_STR",
+                "type": "inventory",
+                "level": "device"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "WSINS",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WDINS",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ],
+                "FQC": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              },
+              "params": {
+                "FQC": {
+                  "bins": [ [0, 10], [10, 30], [30, 50], [50, 70], [70, 90], [90, 110], [110, 130], [130, 150], [150, 170], [170, 190], [190, 210], [210, 230], [230, 250], [250, 270], [270, 290], [290, 310], [310, 330], [330, 350], [350, 361] ],
+                  "multi-param-with": "WSINS",
+                  "multi-param-bins": [ [0, 1], [1, 4], [4, 8], [8, 12], [12, 16], [16, 1000] ]
+                }
+              }
+            },
+            {
+              "name": "WS2A",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "WS2M",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "WS2X",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "WD2A",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WD2M",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WD2X",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WS10A",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WS10M",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WS10X",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WD10A",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WD10M",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WD10X",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "HW2A",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "CW2A",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            }
+          ]
+        },
+        "pw": {
+          "id": "amd-avimet-pw",
+          "rawdata": "avimet.pw.krd",
+          "stall": 30,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "PW",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "RW",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "WXNWS",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "WMOINS",
+                "type": "status"
+              },
+              {
+                "name": "WMO15A",
+                "type": "numeric"
+              },
+              {
+                "name": "WMO60A",
+                "type": "numeric"
+              },
+              {
+                "name": "PRW1A",
+                "type": "numeric"
+              },
+              {
+                "name": "PRWS",
+                "type": "numeric"
+              },
+              {
+                "name": "PRSS",
+                "type": "numeric"
+              },
+              {
+                "name": "TBINS",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "WMOINS",
+              "type": "status",
+              "intervals": [ [ 60, 15 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+              "values": {
+                "code_00": [ "0" ],
+                "code_04": [ "4" ],
+                "code_05": [ "5" ],
+                "code_10": [ "10" ],
+                "code_20": [ "20" ],
+                "code_21": [ "21" ],
+                "code_22": [ "22" ],
+                "code_23": [ "23" ],
+                "code_24": [ "24" ],
+                "code_25": [ "25" ],
+                "code_30": [ "30" ],
+                "code_31": [ "31" ],
+                "code_32": [ "32" ],
+                "code_33": [ "33" ],
+                "code_34": [ "34" ],
+                "code_40": [ "40" ],
+                "code_41": [ "41" ],
+                "code_42": [ "42" ],
+                "code_50": [ "50" ],
+                "code_51": [ "51" ],
+                "code_52": [ "52" ],
+                "code_53": [ "53" ],
+                "code_54": [ "54" ],
+                "code_55": [ "55" ],
+                "code_56": [ "56" ],
+                "code_60": [ "60" ],
+                "code_61": [ "61" ],
+                "code_62": [ "62" ],
+                "code_63": [ "63" ],
+                "code_64": [ "64" ],
+                "code_65": [ "65" ],
+                "code_66": [ "66" ],
+                "code_67": [ "67" ],
+                "code_68": [ "68" ],
+                "code_70": [ "70" ],
+                "code_71": [ "71" ],
+                "code_72": [ "72" ],
+                "code_73": [ "73" ],
+                "code_74": [ "74" ],
+                "code_75": [ "75" ],
+                "code_76": [ "76" ],
+                "code_80": [ "80" ],
+                "code_81": [ "81" ],
+                "code_82": [ "82" ],
+                "code_83": [ "83" ],
+                "code_84": [ "84" ],
+                "code_85": [ "85" ],
+                "code_86": [ "86" ],
+                "code_87": [ "87" ]
+              },
+              "message_interval": 15
+            },
+            {
+              "name": "WMO15A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "WMO60A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "PRW1A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "PRWS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "PRSS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "TBINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            }
+          ]
+        },
+        "pv": {
+          "id": "amd-avimet-pv",
+          "rawdata": "avimet.pv.krd",
+          "stall": 60,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "RawVIS",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS1A",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS2A",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS10A",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS10M",
+                "type": "numeric"
+              },
+              {
+                "name": "VIS10X",
+                "type": "numeric"
+              },
+              {
+                "name": "SENSOR_VIS10M",
+                "type": "numeric"
+              },
+              {
+                "name": "SENSOR_VIS10M_DIR",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "SENSOR_VIS10X",
+                "type": "numeric"
+              },
+              {
+                "name": "SENSOR_VIS10X_DIR",
+                "type": "inventory",
+                "level": "device"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "RawVIS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS1A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS2A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS10A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS10M",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "VIS10X",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "SENSOR_VIS10M",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "SENSOR_VIS10X",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            }
+          ]
+        },
+        "tss": {
+          "id": "amd-avimet-tss",
+          "rawdata": "avimet.tss.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "TSSRaw",
+                "type": "inventory",
+                "level": "device"
+              }
+            ]
+          },
+          "statistics": []
+        },
+        "metar": {
+          "id": "amd-avimet-metar",
+          "rawdata": "avimet.metar.krd",
+          "stall": 86400,
+          "sli": "no",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "MESSAGE",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "TYPE",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "ID",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "DATETIME",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "WIND",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "CAVOK",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "VIS",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "RVR",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "WW",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "CLOUD",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "TEMP",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "PRESS",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "SUPPINFO",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "TREND",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "RMK",
+                "type": "inventory",
+                "level": "device"
+              }
+            ]
+          },
+          "statistics": []
+        },
+        "metrep": {
+          "id": "amd-avimet-metrep",
+          "rawdata": "avimet.metrep.krd",
+          "stall": 86400,
+          "sli": "no",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "MESSAGE",
+                "type": "inventory",
+                "level": "device"
+              }
+            ]
+          },
+          "statistics": []
+        },
+        "snowtam": {
+          "id": "amd-avimet-snowtam",
+          "rawdata": "avimet.snowtam.krd",
+          "stall": 86400,
+          "sli": "no",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "MESSAGE",
+                "type": "inventory",
+                "level": "device"
+              }
+            ]
+          },
+          "statistics": []
+        },
+        "axis": {
+          "id": "amd-avimet-axis",
+          "rawdata": "avimet.axis.krd",
+          "stall": 1800,
+          "sli": "no",
+          "type": "bulk",
+          "content-type": "image/jpeg",
+          "content-storage": "overwrite"
+        }
+      }
+    },
+    "TACMET": {
+      "description": "TacMet standard messages",
+      "messages": {
+        "cloud": {
+          "id": "amd-tacmet-cloud",
+          "rawdata": "tacmet.cloud.krd",
+          "stall": 60,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "ISSKYCLEAR",
+                "type": "numeric"
+              },
+              {
+                "name": "ISVERVIS",
+                "type": "numeric"
+              },
+              {
+                "name": "VERVIS",
+                "type": "numeric"
+              },
+              {
+                "name": "CLOUDBASE",
+                "type": "numeric"
+              },
+              {
+                "name": "CH1INS",
+                "type": "numeric"
+              },
+              {
+                "name": "CH2INS",
+                "type": "numeric"
+              },
+              {
+                "name": "CH3INS",
+                "type": "numeric"
+              },
+              {
+                "name": "AMOUNT1",
+                "type": "numeric"
+              },
+              {
+                "name": "CH1",
+                "type": "numeric"
+              },
+              {
+                "name": "AMOUNT2",
+                "type": "numeric"
+              },
+              {
+                "name": "CH2",
+                "type": "numeric"
+              },
+              {
+                "name": "AMOUNT3",
+                "type": "numeric"
+              },
+              {
+                "name": "CH3",
+                "type": "numeric"
+              },
+              {
+                "name": "AMOUNT4",
+                "type": "numeric"
+              },
+              {
+                "name": "CH4",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "VERVIS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "CLOUDBASE",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "CH1INS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "CH2INS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "CH3INS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "AMOUNT1",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "CH1",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "AMOUNT2",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "CH2",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "AMOUNT3",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "CH3",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "AMOUNT4",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "CH4",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            }
+          ]
+        },
+        "humitemp": {
+          "id": "amd-tacmet-humitemp",
+          "rawdata": "tacmet.humitemp.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "TAINS",
+                "type": "numeric"
+              },
+              {
+                "name": "TDINS",
+                "type": "numeric"
+              },
+              {
+                "name": "RHINS",
+                "type": "numeric"
+              },
+              {
+                "name": "TA10M",
+                "type": "numeric"
+              },
+              {
+                "name": "TA10X",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "TAINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "TA10M",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "TA10X",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "TDINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "RHINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            }
+          ]
+        },
+        "press": {
+          "id": "amd-tacmet-press",
+          "rawdata": "tacmet.press.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "PAINS",
+                "type": "numeric"
+              },
+              {
+                "name": "QFEINS",
+                "type": "numeric"
+              },
+              {
+                "name": "QFFINS",
+                "type": "numeric"
+              },
+              {
+                "name": "QNHINS",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "PAINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "QFEINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            },
+            {
+              "name": "QFFINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "QNHINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MIN": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ],
+                "MAX": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            }
+          ]
+        },
+        "rain": {
+          "id": "amd-tacmet-rain",
+          "rawdata": "tacmet.rain.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "SUM_1H",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "SUM_1H",
+              "functions": {
+                "LAST": [ [ 240, 120 ], [ 2592000, 3600 ] ],
+                "SUM": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ], [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              }
+            }
+          ]
+        },
+        "vis": {
+          "id": "amd-tacmet-vis",
+          "rawdata": "tacmet.vis.krd",
+          "stall": 60,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "MOR1A",
+                "type": "numeric"
+              },
+              {
+                "name": "MOR10A",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "MOR1A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "MOR10A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ],
+                "FQC": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              },
+              "params": {
+                "FQC": {
+                  "bins": [ [0, 200], [200, 400], [400, 600], [600, 800], [800, 1000], [1000, 1200], [1200, 1600], [1600, 2000], [2000, 3000], [3000, 4000], [4000, 5000], [5000, 1000000] ]
+                }
+              }
+            }
+          ]
+        },
+        "wind": {
+          "id": "amd-tacmet-wind",
+          "rawdata": "tacmet.wind.krd",
+          "stall": 30,
+          "sli": "no",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "WSINS",
+                "type": "numeric"
+              },
+              {
+                "name": "WDINS",
+                "type": "numeric"
+              },
+              {
+                "name": "WS2A",
+                "type": "numeric"
+              },
+              {
+                "name": "WS2M",
+                "type": "numeric"
+              },
+              {
+                "name": "WS2X",
+                "type": "numeric"
+              },
+              {
+                "name": "WD2A",
+                "type": "numeric"
+              },
+              {
+                "name": "WD2M",
+                "type": "numeric"
+              },
+              {
+                "name": "WD2X",
+                "type": "numeric"
+              },
+              {
+                "name": "WS10A",
+                "type": "numeric"
+              },
+              {
+                "name": "WS10M",
+                "type": "numeric"
+              },
+              {
+                "name": "WS10X",
+                "type": "numeric"
+              },
+              {
+                "name": "WD10A",
+                "type": "numeric"
+              },
+              {
+                "name": "WD10M",
+                "type": "numeric"
+              },
+              {
+                "name": "WD10X",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "WSINS",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WDINS",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ],
+                "FQC": [ [ "3M", "1D" ], [ "1Y", "1W" ], [ "3Y", "1M" ] ]
+              },
+              "params": {
+                "FQC": {
+                  "bins": [ [0, 10], [10, 30], [30, 50], [50, 70], [70, 90], [90, 110], [110, 130], [130, 150], [150, 170], [170, 190], [190, 210], [210, 230], [230, 250], [250, 270], [270, 290], [290, 310], [310, 330], [330, 350], [350, 361] ],
+                  "multi-param-with": "WSINS",
+                  "multi-param-bins": [ [0, 1], [1, 4], [4, 8], [8, 12], [12, 16], [16, 1000] ]
+                }
+              }
+            },
+            {
+              "name": "WS2A",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "WS2M",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "WS2X",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ],
+                "MEAN": [ [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "WD2A",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WD2M",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WD2X",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WS10A",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WS10M",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WS10X",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WD10A",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WD10M",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            },
+            {
+              "name": "WD10X",
+              "functions": {
+                "LAST": [ [ 120, 60 ] ]
+              }
+            }
+          ]
+        },
+        "pw": {
+          "id": "amd-tacmet-pw",
+          "rawdata": "tacmet.pw.krd",
+          "stall": 60,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "PW",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "RW",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "WXNWS",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "WMOINS",
+                "type": "status"
+              },
+              {
+                "name": "WMO15A",
+                "type": "numeric"
+              },
+              {
+                "name": "WMO60A",
+                "type": "numeric"
+              },
+              {
+                "name": "PRW1A",
+                "type": "numeric"
+              },
+              {
+                "name": "PRWS",
+                "type": "numeric"
+              },
+              {
+                "name": "PRSS",
+                "type": "numeric"
+              },
+              {
+                "name": "TBINS",
+                "type": "numeric"
+              }
+            ]
+          },
+          "statistics": [
+            {
+              "name": "WMOINS",
+              "type": "status",
+              "intervals": [ [ 60, 15 ], [ 10800, 60 ], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+              "values": {
+                "code_00": [ "0" ],
+                "code_04": [ "4" ],
+                "code_05": [ "5" ],
+                "code_10": [ "10" ],
+                "code_20": [ "20" ],
+                "code_21": [ "21" ],
+                "code_22": [ "22" ],
+                "code_23": [ "23" ],
+                "code_24": [ "24" ],
+                "code_25": [ "25" ],
+                "code_30": [ "30" ],
+                "code_31": [ "31" ],
+                "code_32": [ "32" ],
+                "code_33": [ "33" ],
+                "code_34": [ "34" ],
+                "code_40": [ "40" ],
+                "code_41": [ "41" ],
+                "code_42": [ "42" ],
+                "code_50": [ "50" ],
+                "code_51": [ "51" ],
+                "code_52": [ "52" ],
+                "code_53": [ "53" ],
+                "code_54": [ "54" ],
+                "code_55": [ "55" ],
+                "code_56": [ "56" ],
+                "code_60": [ "60" ],
+                "code_61": [ "61" ],
+                "code_62": [ "62" ],
+                "code_63": [ "63" ],
+                "code_64": [ "64" ],
+                "code_65": [ "65" ],
+                "code_66": [ "66" ],
+                "code_67": [ "67" ],
+                "code_68": [ "68" ],
+                "code_70": [ "70" ],
+                "code_71": [ "71" ],
+                "code_72": [ "72" ],
+                "code_73": [ "73" ],
+                "code_74": [ "74" ],
+                "code_75": [ "75" ],
+                "code_76": [ "76" ],
+                "code_80": [ "80" ],
+                "code_81": [ "81" ],
+                "code_82": [ "82" ],
+                "code_83": [ "83" ],
+                "code_84": [ "84" ],
+                "code_85": [ "85" ],
+                "code_86": [ "86" ],
+                "code_87": [ "87" ]
+              },
+              "message_interval": 15
+            },
+            {
+              "name": "WMO15A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "WMO60A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "PRW1A",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "PRWS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "PRSS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            },
+            {
+              "name": "TBINS",
+              "functions": {
+                "LAST": [ [ 240, 120 ] ]
+              }
+            }
+          ]
+        },
+        "tss": {
+          "id": "amd-tacmet-tss",
+          "rawdata": "tacmet.tss.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "TSSRaw",
+                "type": "inventory",
+                "level": "device"
+              }
+            ]
+          },
+          "statistics": []
+        },
+        "metar": {
+          "id": "amd-tacmet-metar",
+          "rawdata": "tacmet.metar.krd",
+          "stall": 86400,
+          "sli": "no",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "MESSAGE",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "TYPE",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "ID",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "DATETIME",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "WIND",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "CAVOK",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "VIS",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "RVR",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "WW",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "CLOUD",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "TEMP",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "PRESS",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "SUPPINFO",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "TREND",
+                "type": "inventory",
+                "level": "device"
+              },
+              {
+                "name": "RMK",
+                "type": "inventory",
+                "level": "device"
+              }
+            ]
+          },
+          "statistics": []
+        },
+        "metrep": {
+          "id": "amd-tacmet-metrep",
+          "rawdata": "tacmet.metrep.krd",
+          "stall": 86400,
+          "sli": "no",
+          "format": {
+            "fields_separator": ":",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "MESSAGE",
+                "type": "inventory",
+                "level": "device"
+              }
+            ]
+          },
+          "statistics": []
         }
       }
     }
