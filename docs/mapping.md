@@ -143,8 +143,8 @@ statistics functions we gonna need and their time intervals.
 ### The object
 
 Finally the new object, including its message and summary statistics functions, looks
-like below:
+like below [JSON version](tongdy.g01.json) and graphically:
 
-![](https://github.com/sparvu/lmo/blob/master/docs/img/Tongdy.G01.DS.svg)
+![](https://github.com/sparvu/lmo/blob/master/docs/img/Tongdy.G01.DS.svg) 
 
 [1]: http://en.tongdy.com/a/COjiancechanpin/44.html
