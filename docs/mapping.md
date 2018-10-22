@@ -10,7 +10,7 @@ Before doing that, you need to create a new data source object, by
 defining what data messages, summary statistics you are interested in and ultimately
 what information you will visualize and report. 
 
-
+![](https://github.com/sparvu/lmo/blob/master/docs/img/Tongdy.G01.DS.svg)
 
 ### Format
 Currently the library is structured as a series of JSON, XML, YAML files.
