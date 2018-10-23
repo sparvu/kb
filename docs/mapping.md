@@ -142,9 +142,8 @@ statistics functions we gonna need and their time intervals.
 
 ### The object
 
-Finally the new object, tongdy_g01, is displayed below: 
+Finally the new data source object, tongdy_g01: 
 ![](https://github.com/sparvu/lmo/blob/master/docs/img/Tongdy.G01.DS.svg) 
-
-along with its [JSON](tongdy.g01.json) definition.
+[JSON](tongdy.g01.json)
 
 [1]: http://en.tongdy.com/a/COjiancechanpin/44.html
