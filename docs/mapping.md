@@ -2,8 +2,7 @@
 
 This section describes how can you create a new data source object, along with all needed 
 information: the data messages, the summary statistics, the alarms and devices. For this 
-example we will use a simple indoor air quality device, from Tongdy corporation, called
-G01-IAQ, documented [here][1]
+example we will use a simple indoor air quality device, Tongdy G01-IAQ, documented [here][1]
 
 ### Pre-requisites
 
@@ -11,11 +10,15 @@ Before writing the new DS object, make sure you collect the following details:
 
  * if it is a a hardware device: the model and type
  
- * if it is a software, the name of the software and its model, version
- 
+ * if it is a software, the name of the software, version, architecture
+   
  * the protocol used to communicate, for example MODBUS or SERIAL ASCII POLLED, or TCP
  
  * and the parameters required for analysis and visualisation
+
+These are important requisites, before starting to map data to a new data source object. 
+Always start from hardware model and vendor if you add new physical devices, do not create
+abstract data source names without a clear need.
 
 ### Hardware characteristics
 
@@ -139,6 +142,32 @@ statistics functions we gonna need and their time intervals.
 },
 ```
 
+### Validation
+
+Submit your new object defintion to support@kronometrix.com for final validation, providing
+the following 
+information:
+
+#### Object Type
+  * Software
+  * Hardware 
+#### Object Characteristics
+  * Manufacturer:
+  * Device: 
+  * Model: 
+  * Version (Software only):
+  * Architecture (Software only): 
+  * Protocol: 
+#### Object DS Name:
+#### Object Message(s):
+  * Message Name:
+  * Message ID:
+  * Raw data: 
+  * STALL Alarm:
+  * SLI: Yes/No 
+  * Parameters:
+  * Statistics:
+  * Time Intervals:
 
 ### The object
 
