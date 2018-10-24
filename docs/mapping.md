@@ -30,8 +30,8 @@ about the device:
  * model: in this case is the same as the device name: G01-IAQ
  * protocol: this device uses MODBUS-RTU
 
-Summarising these we will define a new object, called tongdy_g01, to map the vendor and
-the hardware device model to the new object.
+We will define a new object, called tongdy_g01, to map all collected information, from 
+vendor to the hardware device model, protocol.
 
 ### The message
 
@@ -119,8 +119,8 @@ This will be the JSON defintion of the message:
 
 #### Summary statistics functions
 
-The last part will describe what summary statistics are associated to each recorded 
-parameter. These are direct connected to how and what data we present on the UI: charts,
+The last part will describe what summary statistics are associated to each parameter. 
+These are direct connected to how and what data we present on the UI: charts,
 indicators, maximum or minimum per day of certain parameters. For all our recorded metrics
 we have selected the following summary statistics functions: MIN, MAX, MEAN and LAST.
 
@@ -145,8 +145,7 @@ statistics functions we gonna need and their time intervals.
 ### Validation
 
 Submit your new object defintion to support@kronometrix.com for final validation, providing
-the following 
-information:
+the following information. The computational value will be calculated by Kronometrix team.
 
 #### Object Type
   * Software
