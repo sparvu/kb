@@ -1,4 +1,10 @@
-[![](https://github.com/sparvu/lmo/blob/master/docs/img/license.svg)](LICENSE)
+<img src="/docs/img/k-logo.png" align="left" height="35" width="275" />
+<br/><br/>
+<br/>
+
+[![](https://img.shields.io/static/v1.svg?label=license&message=BSD3&color=blue)](LICENSE)
+
+
 # The Library of Monitoring Objects 
 
 ## Overview
@@ -26,7 +32,7 @@ The library maps and describes data from different industries, currently handlin
 meteorology and environmental monitoring. We are working heavily to add different objects
 from industrial IOT.
 
-![](https://raw.github.com/sparvu/lmo/master/docs/img/lmo-light2.png)
+![](/docs/img/lmo-light2.png)
 
  * Environmental Monitoring
  * Finance
