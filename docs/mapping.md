@@ -1,3 +1,7 @@
+<img src="/docs/img/k-logo.png" align="left" height="35" width="275" />
+<br/><br/>
+<br/>
+
 ## Data Mapping
 
 This section describes how can you create a new data source object, along with all needed 
@@ -171,6 +175,6 @@ the following information. The computational value will be calculated by Kronome
 ### The object
 
 Finally the new data source object, tongdy_g01, as [JSON](tongdy.g01.json): 
-![](https://github.com/sparvu/lmo/blob/master/docs/img/Tongdy.G01.DS.svg)
+![](/docs/img/Tongdy.G01.DS.png)
 
 [1]: http://en.tongdy.com/a/COjiancechanpin/44.html

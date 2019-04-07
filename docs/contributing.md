@@ -1,3 +1,7 @@
+<img src="/docs/img/k-logo.png" align="left" height="35" width="275" />
+<br/><br/>
+<br/>
+
 ## Contributing
 
 ### Add your own LMO object(s)
