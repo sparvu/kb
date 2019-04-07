@@ -1,3 +1,7 @@
+<img src="/docs/img/k-logo.png" align="left" height="35" width="275" />
+<br/><br/>
+<br/>
+
 ## Data Mapping
 
 This section describes how can you create a new data source object, along with all needed 
