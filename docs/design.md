@@ -22,7 +22,7 @@ least one valid IPv4 or IPv6 address, capable to send and receive data. Example:
 Below you can see the structure of a data source object, including its messages, summary
 statistics, the devices.
 
-![](https://github.com/sparvu/lmo/blob/master/docs/img/DS.Object.svg)
+![](/docs/img/DS.Object.png)
 
 ### Data message
 All collected metrics over time are combined as a data message. There can be many types of
