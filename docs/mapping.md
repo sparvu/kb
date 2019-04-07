@@ -174,7 +174,9 @@ the following information. The computational value will be calculated by Kronome
 
 ### The object
 
-Finally the new data source object, tongdy_g01, as [JSON](tongdy.g01.json): 
-![](/docs/img/Tongdy.G01.DS.png)
+Finally the new data source object, tongdy_g01, as [JSON](tongdy.g01.json):
+<br/><br/>
+<img src="/docs/img/Tongdy.G01.DS.png" height="564" width="300" />
+<br/>
 
 [1]: http://en.tongdy.com/a/COjiancechanpin/44.html
