@@ -7,6 +7,10 @@
 
 # Knowledge Base
 
+* [Design](docs/design.md)
+* [Data mapping](docs/mapping.md)
+* [Contributing and support](docs/contributing.md)
+
 ## Overview
 A set of objects, or data neurons, mapping real-world devices or systems, like weather stations, air quality sensors, computer, network or storage systems, operating systems or enterprise services. 
 These objects include all necessarily metrics and summary statistics required for certain activities, like performance analysis, availability or reliability reporting. These entities, the data neurons can connect to other data neurons, building and providing fast informational data links, used to help the data analysis process or visualization. These data neurons are grouped by specific industries, like ICT, weather and environment, preventive healthcare or industrial IoT.
@@ -16,10 +20,6 @@ It is very hard to map real-world objects and provide a simple capability to ana
 
 
 The library is designed for software engineers, devops, scientists, analysts, meteorologists and companies involved in data analysis, performance analysis, and analytics.
-
-* [Design](docs/design.md)
-* [Data mapping](docs/mapping.md)
-* [Contributing and support](docs/contributing.md)
 
 
 ## Industries
