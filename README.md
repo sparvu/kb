@@ -23,8 +23,3 @@ It is very hard to map real-world objects and provide a simple capability to ana
 
 ![](/docs/img/kkb.png)
 
- * Weather & Environment
- * Information Communications & Technology (ICT)
- * Preventive Healthcare
- * Energy & Utilities 
- * Industrial IoT (IIoT) 
