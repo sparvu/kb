@@ -8,9 +8,14 @@
 # Knowledge Base
 
 ## Overview
-A set of intelligent objects, or data neurons, mapping real-world devices or systems, like weather stations, air quality sensors, computer and network systems, operating systems, entreprise services, including all necessarily metrics and summary statistics required for analysing their performance, availability and reliability. The objects are grouped by specific industries, like ICT, environmental monitoring, meteorology, business intelligence, industrial IoT. A data neuron is the fundamental entity responsible to keep vital information in relation to a real-world object, including: a body which contains the source of data and its connectivity . It has a 
+A set of objects, or data neurons, mapping real-world devices or systems, like weather stations, air quality sensors, computer, network or storage systems, operating systems or enterprise services. 
+These objects include all necessarily metrics and summary statistics required for certain activities, like performance analysis, availability or reliability reporting. These entities, the data neurons can connect to other data neurons, building and providing fast informational data links, used to help the data analysis process or visualization. These data neurons are grouped by specific industries, like ICT, weather and environment, preventive healthcare or industrial IoT.
 
-In general, people collect a lot of data, thousands of parameters without a very good understanding what to do with all this data, how to use it on the longer run, what to analyse and visualise and how to store it. The data neurons are essential and central for any data analytics process, from data recording to analysis and visualisation, offering a complete set of objects ready to be used within any data analytics product. The library is designed for software engineers, devops, scientists, analysts, meteorologists and companies involved in data analysis, performance analysis, and analytics.
+## Scope
+It is very hard to map real-world objects and provide a simple capability to analyse their functionality and performance. Such objects, can have hundreds or even thousands of parameters, collecting all these parameters might not help us to build a very efficient data analysis process. Sometimes, we do not know what to do with all this data, how to use it, what to analyse and visualise and how to store it. To simplify all of these, we have created a knowledge-base system, which contains real-world objects, including their main parameters. Designed as a library, this knowledge-base system, contains a set of data neurons, which can be used to build different networks to solve different problems. This is very experimental work.
+
+
+The library is designed for software engineers, devops, scientists, analysts, meteorologists and companies involved in data analysis, performance analysis, and analytics.
 
 * [Design](docs/design.md)
 * [Data mapping](docs/mapping.md)
@@ -18,9 +23,6 @@ In general, people collect a lot of data, thousands of parameters without a very
 
 
 ## Industries
-Kronometrix Intelligent Objects, are made of data neurons. The data neurons map and describe data from different industries, currently handling ICT, 
-meteorology and environmental monitoring. We are working heavily to add different objects
-from industrial IOT.
 
 ![](/docs/img/kkb.png)
 
