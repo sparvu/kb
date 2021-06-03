@@ -22,7 +22,7 @@ Kronometrix Intelligent Objects, are made of data neurons. The data neurons map 
 meteorology and environmental monitoring. We are working heavily to add different objects
 from industrial IOT.
 
-![](/docs/img/lmo-light2.png)
+![](/docs/img/kkb.png)
 
  * Environmental Monitoring
  * Finance
