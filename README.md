@@ -26,9 +26,8 @@ The library is designed for software engineers, devops, scientists, analysts, me
 
 ![](/docs/img/kkb.png)
 
- * Environmental Monitoring
- * Finance
- * Business Intelligence (BI)
+ * Weather & Environment
  * Information Communications & Technology (ICT)
- * Weather and Meteorology
+ * Preventive Healthcare
+ * Energy & Utilities 
  * Industrial IoT (IIoT) 
