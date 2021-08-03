@@ -1,8 +1,5 @@
-<img src="/docs/img/k-logo.png" align="left" height="35" width="275" />
-<br/><br/>
-<br/>
 
-## Design
+# Design
 
 ### Data source
 A data source, is described as a system connected to a public or private network with at 
