@@ -1,4 +1,4 @@
-<img src="/docs/img/k-logo.png" align="left" height="35" width="275" />
+<img src="/docs/img/" align="left" height="35" width="275" />
 <br/><br/>
 <br/>
 
@@ -7,7 +7,7 @@
 
 # Knowledge Base
 
-Kronometrix Knowledge-Base is a a semantic representation of real-world objects from different industries, used by Kronometrix Distributed Data Fabric.
+Object Knowledge-Base is a a semantic representation of real-world objects from different industries, easy to be used on third parties software. For example this set of objects is used by default within Kronometrix Distributed Data Fabric.
 
 * [Design](docs/design.md)
 * [Data mapping](docs/mapping.md)
