@@ -1,8 +1,5 @@
-<img src="/docs/img/k-logo.png" align="left" height="35" width="275" />
-<br/><br/>
-<br/>
 
-## Data Mapping
+# Data Mapping
 
 This section describes how can you create a new data source object, along with all needed 
 information: the data messages, the summary statistics, the alarms and devices. For this 
