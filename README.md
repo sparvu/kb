@@ -21,5 +21,5 @@ It is difficult to map real-world objects, and at the same time offer a simple i
 
 ## Industries
 
-![](/docs/img/kkb.png)
+![](/docs/img/okb.png)
 
