@@ -1,11 +1,7 @@
-<img src="/docs/img/" align="left" height="35" width="275" />
-<br/><br/>
-<br/>
+# Object Knowledge-Base
 
 [![](https://img.shields.io/static/v1.svg?label=license&message=BSD3&color=blue)](LICENSE)
 
-
-# Knowledge Base
 
 Object Knowledge-Base is a a semantic representation of real-world objects from different industries, easy to be used on third parties software. For example this set of objects is used by default within Kronometrix Distributed Data Fabric.
 
