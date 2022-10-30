@@ -3,7 +3,7 @@
 [![](https://img.shields.io/static/v1.svg?label=license&message=BSD3&color=blue)](LICENSE)
 
 
-The Smart Data Objects is a knowledge base, semantic representation of real-world objects from different industries, easy to be used by third parties software. For example this set of objects is used by default within Kronometrix Distributed Data Fabric.
+The Smart Data Objects is a knowledge base, semantic representation of real-world objects from different industries, easy to be used by third parties software. For example this set of objects is used by default within Kronometrix Data Analytics Platform.
 
 * [Design](docs/design.md)
 * [Data mapping](docs/mapping.md)
