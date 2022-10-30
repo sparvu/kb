@@ -1,9 +1,9 @@
-# Object Knowledge-Base
+# Data Object Knowledge-Base
 
 [![](https://img.shields.io/static/v1.svg?label=license&message=BSD3&color=blue)](LICENSE)
 
 
-Object Knowledge-Base is a a semantic representation of real-world objects from different industries, easy to be used by third parties software. For example this set of objects is used by default within Kronometrix Distributed Data Fabric.
+The Data Object Knowledge-Base is a a semantic representation of real-world objects from different industries, easy to be used by third parties software. For example this set of objects is used by default within Kronometrix Distributed Data Fabric.
 
 * [Design](docs/design.md)
 * [Data mapping](docs/mapping.md)
@@ -17,5 +17,5 @@ It is difficult to map real-world objects, and at the same time offer a simple i
 
 ## Industries
 
-![](/docs/img/okb.png)
+![](/docs/img/kb.png)
 
