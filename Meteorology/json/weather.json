@@ -4,6 +4,212 @@
   "id": "wcd",
   "ds_stall": 600,
   "ds": {
+	"2BT_106L_LH": {
+      "description": "Ozone monitor, 2B Technologies, 106L, lamp heater",
+      "messages": {
+        "106L_LH": {
+          "id": "106L_LH",
+          "rawdata": "ozone_2BT_106L_LH.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "ozone",
+                "type": "numeric"
+              },
+              {
+                "name": "cell_temp",
+                "type": "numeric"
+              },
+              {
+                "name": "cell_press",
+                "type": "numeric"
+              },
+              {
+                "name": "flow_rate",
+                "type": "numeric"
+              },
+              {
+                "name": "lamp_heater",
+                "type": "numeric"
+              },
+              {
+                "name": "day",
+                "type": "inventory"
+              },
+              {
+                "name": "time",
+                "type": "inventory"
+              },
+	      {
+                "name": "id_log",
+                "type": "inventory"
+              }			  
+            ]
+          },
+          "statistics": [
+            {
+              "name": "ozone",
+              "functions": {
+                "MEAN": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "LAST": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+		        "MIN": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+		        "MAX": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "cell_temp",
+              "functions": {
+                "LAST": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },			
+            {
+              "name": "cell_press",
+              "functions": {
+                "LAST": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },			
+            {
+              "name": "flow_rate",
+              "functions": {
+                "LAST": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },			
+            {
+              "name": "lamp_heater",
+              "functions": {
+                "LAST": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            }
+          ]
+        }
+      }
+    },
+	"2BT_106L_PD": {
+      "description": "Ozon monitor, 2B Technologies, 106L, photodiode",
+      "messages": {
+        "106L_PD": {
+          "id": "106L_PD",
+          "rawdata": "ozone_2BT_106L_PD.krd",
+          "stall": 120,
+          "sli": "yes",
+          "format": {
+            "fields_separator": ";",
+            "fields": [
+              {
+                "name": "subscription_id",
+                "type": "metadata",
+                "role": "subscription_id"
+              },
+              {
+                "name": "ds_id",
+                "type": "metadata",
+                "role": "ds_id"
+              },
+              {
+                "name": "device_id",
+                "type": "metadata",
+                "role": "device_id"
+              },
+              {
+                "name": "timestamp",
+                "type": "timestamp",
+                "timestamp_format": "unix"
+              },
+              {
+                "name": "ozon",
+                "type": "numeric"
+              },
+              {
+                "name": "cell_temp",
+                "type": "numeric"
+              },
+              {
+                "name": "cell_press",
+                "type": "numeric"
+              },
+              {
+                "name": "flow_rate",
+                "type": "numeric"
+              },
+              {
+                "name": "photodiode_voltage",
+                "type": "numeric"
+              },
+              {
+                "name": "day",
+                "type": "inventory"
+              },
+              {
+                "name": "time",
+                "type": "inventory"
+              },
+	      {
+                "name": "id_log",
+                "type": "inventory"
+              }			  
+            ]
+          },
+          "statistics": [
+            {
+              "name": "ozon",
+              "functions": {
+                "MEAN": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+                "LAST": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+		"MIN": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ],
+		"MAX": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },
+            {
+              "name": "cell_temp",
+              "functions": {
+                "LAST": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },			
+            {
+              "name": "cell_press",
+              "functions": {
+                "LAST": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },			
+            {
+              "name": "flow_rate",
+              "functions": {
+                "LAST": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            },			
+            {
+              "name": "photodiode_voltage",
+              "functions": {
+                "LAST": [ [21600, 60], [ 86400, 600 ], [ 604800, 3600 ], [ 2592000, 10800 ] ]
+              }
+            }
+          ]
+        }
+      }
+    },    
     "foshk_wh1080": {
       "messages": {
         "default": {
